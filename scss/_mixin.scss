@@ -21,5 +21,11 @@ $maxWidth: 1400;
     padding: $padding;
     cursor: pointer;
     border: none;
+    transition: all 0.3s ease-in-out;
     @include font("Inter", normal, 600, 20px, 24px, 0, rgb(255, 255, 255));
+
+    &:hover {
+        background: rgb(0, 53, 198);
+        color: #ffffff;
+    }
 }

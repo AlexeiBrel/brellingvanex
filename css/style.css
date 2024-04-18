@@ -290,6 +290,7 @@ ol {
   padding: 20px 94px;
   cursor: pointer;
   border: none;
+  transition: all 0.3s ease-in-out;
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
@@ -298,6 +299,10 @@ ol {
   letter-spacing: 0;
   color: rgb(255, 255, 255);
   margin-top: 40px;
+}
+.main .hero__btn:hover {
+  background: rgb(0, 53, 198);
+  color: #ffffff;
 }
 .main .solution__title {
   font-family: "Inter";
@@ -402,6 +407,7 @@ ol {
   padding: 16px 32px;
   cursor: pointer;
   border: none;
+  transition: all 0.3s ease-in-out;
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
@@ -411,6 +417,10 @@ ol {
   color: rgb(255, 255, 255);
   background: rgb(244, 246, 253);
   color: #000000;
+}
+.main .product__tabs-btn:hover {
+  background: rgb(0, 53, 198);
+  color: #ffffff;
 }
 .main .product__tabs-btn.btn__active {
   background: rgb(1, 70, 254);
@@ -476,6 +486,7 @@ ol {
   padding: 20px 94px;
   cursor: pointer;
   border: none;
+  transition: all 0.3s ease-in-out;
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
@@ -484,6 +495,10 @@ ol {
   letter-spacing: 0;
   color: rgb(255, 255, 255);
   margin-top: 40px;
+}
+.main .product__btn:hover {
+  background: rgb(0, 53, 198);
+  color: #ffffff;
 }
 .main .help {
   background: rgb(244, 246, 253);
@@ -542,6 +557,7 @@ ol {
   padding: 20px 94px;
   cursor: pointer;
   border: none;
+  transition: all 0.3s ease-in-out;
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
@@ -550,6 +566,10 @@ ol {
   letter-spacing: 0;
   color: rgb(255, 255, 255);
   margin-top: 70px;
+}
+.main .help__btn:hover {
+  background: rgb(0, 53, 198);
+  color: #ffffff;
 }
 
 @media (max-width: 1200px) {
@@ -568,6 +588,7 @@ ol {
     padding: 18px 94px;
     cursor: pointer;
     border: none;
+    transition: all 0.3s ease-in-out;
     font-family: "Inter";
     font-style: normal;
     font-weight: 600;
@@ -575,6 +596,10 @@ ol {
     line-height: 24px;
     letter-spacing: 0;
     color: rgb(255, 255, 255);
+  }
+  .main .hero__btn:hover {
+    background: rgb(0, 53, 198);
+    color: #ffffff;
   }
   .main .solution__title {
     font-size: 50px;
@@ -594,6 +619,7 @@ ol {
     padding: 18px 94px;
     cursor: pointer;
     border: none;
+    transition: all 0.3s ease-in-out;
     font-family: "Inter";
     font-style: normal;
     font-weight: 600;
@@ -601,6 +627,10 @@ ol {
     line-height: 24px;
     letter-spacing: 0;
     color: rgb(255, 255, 255);
+  }
+  .main .product__btn:hover {
+    background: rgb(0, 53, 198);
+    color: #ffffff;
   }
   .main .help__title {
     font-size: 50px;
@@ -611,6 +641,7 @@ ol {
     padding: 18px 94px;
     cursor: pointer;
     border: none;
+    transition: all 0.3s ease-in-out;
     font-family: "Inter";
     font-style: normal;
     font-weight: 600;
@@ -618,6 +649,10 @@ ol {
     line-height: 24px;
     letter-spacing: 0;
     color: rgb(255, 255, 255);
+  }
+  .main .help__btn:hover {
+    background: rgb(0, 53, 198);
+    color: #ffffff;
   }
 }
 @media (max-width: 992px) {
@@ -661,6 +696,7 @@ ol {
     padding: 16px 94px;
     cursor: pointer;
     border: none;
+    transition: all 0.3s ease-in-out;
     font-family: "Inter";
     font-style: normal;
     font-weight: 600;
@@ -668,6 +704,10 @@ ol {
     line-height: 24px;
     letter-spacing: 0;
     color: rgb(255, 255, 255);
+  }
+  .main .hero__btn:hover {
+    background: rgb(0, 53, 198);
+    color: #ffffff;
   }
   .main .solution__title {
     font-size: 30px;
@@ -715,6 +755,7 @@ ol {
     padding: 16px 94px;
     cursor: pointer;
     border: none;
+    transition: all 0.3s ease-in-out;
     font-family: "Inter";
     font-style: normal;
     font-weight: 600;
@@ -722,6 +763,10 @@ ol {
     line-height: 24px;
     letter-spacing: 0;
     color: rgb(255, 255, 255);
+  }
+  .main .help__btn:hover {
+    background: rgb(0, 53, 198);
+    color: #ffffff;
   }
 }
 @media (max-width: 576px) {
@@ -743,6 +788,7 @@ ol {
     padding: 10px 70px;
     cursor: pointer;
     border: none;
+    transition: all 0.3s ease-in-out;
     font-family: "Inter";
     font-style: normal;
     font-weight: 600;
@@ -752,6 +798,10 @@ ol {
     color: rgb(255, 255, 255);
     font-size: 16px;
     margin-top: 30px;
+  }
+  .main .hero__btn:hover {
+    background: rgb(0, 53, 198);
+    color: #ffffff;
   }
   .main .solution__title {
     font-size: 25px;
@@ -811,6 +861,7 @@ ol {
     padding: 10px 70px;
     cursor: pointer;
     border: none;
+    transition: all 0.3s ease-in-out;
     font-family: "Inter";
     font-style: normal;
     font-weight: 600;
@@ -820,6 +871,10 @@ ol {
     color: rgb(255, 255, 255);
     font-size: 16px;
     margin-top: 30px;
+  }
+  .main .product__btn:hover {
+    background: rgb(0, 53, 198);
+    color: #ffffff;
   }
   .main .help__title {
     font-size: 25px;
@@ -842,6 +897,7 @@ ol {
     padding: 10px 70px;
     cursor: pointer;
     border: none;
+    transition: all 0.3s ease-in-out;
     font-family: "Inter";
     font-style: normal;
     font-weight: 600;
@@ -851,6 +907,10 @@ ol {
     color: rgb(255, 255, 255);
     font-size: 16px;
     margin-top: 30px;
+  }
+  .main .help__btn:hover {
+    background: rgb(0, 53, 198);
+    color: #ffffff;
   }
 }
 @media (max-width: 400px) {
