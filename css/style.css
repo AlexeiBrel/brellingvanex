@@ -258,33 +258,40 @@ ol {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-  padding: 64px 10px;
+  padding: 64px 15px;
 }
-.main .hero {
-  padding: 64px 10px 0 10px;
-}
-.main .hero__title {
+.main .travel__title,
+.main .solution__title,
+.main .product__title,
+.main .help__title {
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
-  font-size: 70px;
+  font-size: 60px;
   line-height: 100%;
   letter-spacing: 0;
   color: rgb(0, 0, 0);
   text-align: center;
 }
-.main .hero__subtitle {
+.main .travel__subtitle,
+.main .solution__subtitle,
+.main .product__subtitle,
+.main .help__subtitle {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 140%;
   letter-spacing: 0;
-  color: rgba(42, 43, 47, 0.8);
+  color: rgba(42, 43, 47, 0.9);
   text-align: center;
+  margin-top: 24px;
   max-width: 680px;
 }
-.main .hero__btn {
+.main .travel__btn,
+.main .solution__btn,
+.main .product__btn,
+.main .help__btn {
   border-radius: 12px;
   background: rgb(1, 70, 254);
   padding: 20px 94px;
@@ -300,30 +307,23 @@ ol {
   color: rgb(255, 255, 255);
   margin-top: 40px;
 }
-.main .hero__btn:hover {
+.main .travel__btn:hover,
+.main .solution__btn:hover,
+.main .product__btn:hover,
+.main .help__btn:hover {
   background: rgb(0, 53, 198);
-  color: #ffffff;
+  color: rgb(255, 255, 255);
 }
-.main .solution__title {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 60px;
-  line-height: 100%;
-  letter-spacing: 0;
-  color: rgb(0, 0, 0);
-  text-align: center;
+.main .travel {
+  padding: 64px 15px 0 15px;
+}
+.main .travel__title {
+  font-size: 70px;
+}
+.main .travel__subtitle {
+  color: rgba(42, 43, 47, 0.8);
 }
 .main .solution__subtitle {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 140%;
-  letter-spacing: 0;
-  color: rgba(42, 43, 47, 0.9);
-  text-align: center;
-  margin-top: 24px;
   max-width: 680px;
 }
 .main .solution__cards {
@@ -366,31 +366,12 @@ ol {
   margin-top: 12px;
 }
 .main .solution__card-img {
+  margin-top: 50px;
   max-width: 310px;
   width: 100%;
 }
-.main .product__title {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 60px;
-  line-height: 100%;
-  letter-spacing: 0;
-  color: rgb(0, 0, 0);
-  text-align: center;
-}
 .main .product__subtitle {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 140%;
-  letter-spacing: 0;
-  color: rgba(42, 43, 47, 0.8);
-  text-align: center;
-  margin-top: 24px;
   max-width: 770px;
-  text-wrap: balance;
 }
 .main .product__tabs {
   margin-top: 64px;
@@ -420,7 +401,7 @@ ol {
 }
 .main .product__tabs-btn:hover {
   background: rgb(0, 53, 198);
-  color: #ffffff;
+  color: rgb(255, 255, 255);
 }
 .main .product__tabs-btn.btn__active {
   background: rgb(1, 70, 254);
@@ -429,9 +410,10 @@ ol {
 .main .product__tabs-content {
   margin-top: 32px;
   position: relative;
+  position: relative;
 }
 .main .product__tabs-panel {
-  display: none;
+  display: flex;
   justify-content: space-between;
   gap: 30px;
   max-width: 1140px;
@@ -442,7 +424,22 @@ ol {
   border: 2px solid rgba(0, 0, 0, 0.04);
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.12);
   background: rgb(255, 255, 255);
-  z-index: 3;
+}
+.main .product__tabs-panel:nth-child(2) {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  left: 0;
+  top: 25px;
+  max-width: 1100px;
+}
+.main .product__tabs-panel:nth-child(3) {
+  position: absolute;
+  z-index: -2;
+  right: 0;
+  left: 0;
+  top: 50px;
+  max-width: 1060px;
 }
 .main .product__tabs-panel.panel__active {
   display: flex;
@@ -480,39 +477,9 @@ ol {
 .main .product__tabs-img img {
   width: 100%;
 }
-.main .product__btn {
-  border-radius: 12px;
-  background: rgb(1, 70, 254);
-  padding: 20px 94px;
-  cursor: pointer;
-  border: none;
-  transition: all 0.3s ease-in-out;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 0;
-  color: rgb(255, 255, 255);
-  margin-top: 40px;
-}
-.main .product__btn:hover {
-  background: rgb(0, 53, 198);
-  color: #ffffff;
-}
 .main .help {
   background: rgb(244, 246, 253);
   max-width: 100%;
-}
-.main .help__title {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 60px;
-  line-height: 100%;
-  letter-spacing: 0;
-  color: rgb(0, 0, 0);
-  text-align: center;
 }
 .main .help__cards {
   display: grid;
@@ -552,24 +519,7 @@ ol {
   text-align: center;
 }
 .main .help__btn {
-  border-radius: 12px;
-  background: rgb(1, 70, 254);
-  padding: 20px 94px;
-  cursor: pointer;
-  border: none;
-  transition: all 0.3s ease-in-out;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 0;
-  color: rgb(255, 255, 255);
   margin-top: 70px;
-}
-.main .help__btn:hover {
-  background: rgb(0, 53, 198);
-  color: #ffffff;
 }
 
 @media (max-width: 1200px) {
@@ -577,64 +527,17 @@ ol {
     gap: 60px;
   }
   .main section {
-    padding: 50px 10px;
+    padding: 50px 15px;
   }
-  .main .hero__title {
-    font-size: 60px;
-  }
-  .main .hero__btn {
-    border-radius: 12px;
-    background: rgb(1, 70, 254);
-    padding: 18px 94px;
-    cursor: pointer;
-    border: none;
-    transition: all 0.3s ease-in-out;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 0;
-    color: rgb(255, 255, 255);
-  }
-  .main .hero__btn:hover {
-    background: rgb(0, 53, 198);
-    color: #ffffff;
-  }
-  .main .solution__title {
-    font-size: 50px;
-  }
-  .main .product__title {
-    font-size: 50px;
-  }
-  .main .product__tabs-title {
-    font-size: 50px;
-  }
-  .main .product__tabs-description {
-    font-size: 16px;
-  }
-  .main .product__btn {
-    border-radius: 12px;
-    background: rgb(1, 70, 254);
-    padding: 18px 94px;
-    cursor: pointer;
-    border: none;
-    transition: all 0.3s ease-in-out;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 0;
-    color: rgb(255, 255, 255);
-  }
-  .main .product__btn:hover {
-    background: rgb(0, 53, 198);
-    color: #ffffff;
-  }
+  .main .travel__title,
+  .main .solution__title,
+  .main .product__title,
   .main .help__title {
     font-size: 50px;
   }
+  .main .travel__btn,
+  .main .solution__btn,
+  .main .product__btn,
   .main .help__btn {
     border-radius: 12px;
     background: rgb(1, 70, 254);
@@ -650,9 +553,21 @@ ol {
     letter-spacing: 0;
     color: rgb(255, 255, 255);
   }
+  .main .travel__btn:hover,
+  .main .solution__btn:hover,
+  .main .product__btn:hover,
   .main .help__btn:hover {
     background: rgb(0, 53, 198);
-    color: #ffffff;
+    color: rgb(255, 255, 255);
+  }
+  .main .travel__title {
+    font-size: 60px;
+  }
+  .main .product__tabs-title {
+    font-size: 50px;
+  }
+  .main .product__tabs-description {
+    font-size: 16px;
   }
 }
 @media (max-width: 992px) {
@@ -685,12 +600,18 @@ ol {
     gap: 30px;
   }
   .main section {
-    padding: 30px 10px;
+    padding: 30px 15px;
   }
-  .main .hero__title {
-    font-size: 40px;
+  .main .travel__title,
+  .main .solution__title,
+  .main .product__title,
+  .main .help__title {
+    font-size: 30px;
   }
-  .main .hero__btn {
+  .main .travel__btn,
+  .main .solution__btn,
+  .main .product__btn,
+  .main .help__btn {
     border-radius: 12px;
     background: rgb(1, 70, 254);
     padding: 16px 94px;
@@ -705,18 +626,18 @@ ol {
     letter-spacing: 0;
     color: rgb(255, 255, 255);
   }
-  .main .hero__btn:hover {
+  .main .travel__btn:hover,
+  .main .solution__btn:hover,
+  .main .product__btn:hover,
+  .main .help__btn:hover {
     background: rgb(0, 53, 198);
-    color: #ffffff;
+    color: rgb(255, 255, 255);
   }
-  .main .solution__title {
-    font-size: 30px;
+  .main .travel__title {
+    font-size: 40px;
   }
   .main .solution__cards {
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-  }
-  .main .product__title {
-    font-size: 30px;
   }
   .main .product__tabs-btn {
     font-size: 16px;
@@ -739,9 +660,6 @@ ol {
   .main .product__tabs-img {
     max-width: 100%;
   }
-  .main .help__title {
-    font-size: 30px;
-  }
   .main .help__cards {
     grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
   }
@@ -749,40 +667,27 @@ ol {
     font-size: 26px;
     text-wrap: balance;
   }
-  .main .help__btn {
-    border-radius: 12px;
-    background: rgb(1, 70, 254);
-    padding: 16px 94px;
-    cursor: pointer;
-    border: none;
-    transition: all 0.3s ease-in-out;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 0;
-    color: rgb(255, 255, 255);
-  }
-  .main .help__btn:hover {
-    background: rgb(0, 53, 198);
-    color: #ffffff;
-  }
 }
 @media (max-width: 576px) {
   .main {
     gap: 0;
   }
-  .main .hero {
-    padding: 64px 10px 30px 10px;
+  .main .travel__title,
+  .main .solution__title,
+  .main .product__title,
+  .main .help__title {
+    font-size: 25px;
   }
-  .main .hero__title {
-    font-size: 30px;
-  }
-  .main .hero__subtitle {
+  .main .travel__subtitle,
+  .main .solution__subtitle,
+  .main .product__subtitle,
+  .main .help__subtitle {
     font-size: 16px;
   }
-  .main .hero__btn {
+  .main .travel__btn,
+  .main .solution__btn,
+  .main .product__btn,
+  .main .help__btn {
     border-radius: 12px;
     background: rgb(1, 70, 254);
     padding: 10px 70px;
@@ -799,15 +704,18 @@ ol {
     font-size: 16px;
     margin-top: 30px;
   }
-  .main .hero__btn:hover {
+  .main .travel__btn:hover,
+  .main .solution__btn:hover,
+  .main .product__btn:hover,
+  .main .help__btn:hover {
     background: rgb(0, 53, 198);
-    color: #ffffff;
+    color: rgb(255, 255, 255);
   }
-  .main .solution__title {
-    font-size: 25px;
+  .main .travel {
+    padding: 64px 15px 30px 15px;
   }
-  .main .solution__subtitle {
-    font-size: 16px;
+  .main .travel__title {
+    font-size: 30px;
   }
   .main .solution__cards {
     display: grid;
@@ -820,11 +728,10 @@ ol {
   .main .solution__card-description {
     font-size: 16px;
   }
-  .main .product__title {
-    font-size: 25px;
-  }
-  .main .product__subtitle {
-    font-size: 16px;
+  .main .solution__card-img {
+    margin-top: 20px;
+    max-width: 310px;
+    width: 100%;
   }
   .main .product__tabs {
     margin-top: 30px;
@@ -855,29 +762,7 @@ ol {
   .main .product__tabs-img {
     max-width: 100%;
   }
-  .main .product__btn {
-    border-radius: 12px;
-    background: rgb(1, 70, 254);
-    padding: 10px 70px;
-    cursor: pointer;
-    border: none;
-    transition: all 0.3s ease-in-out;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 0;
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-    margin-top: 30px;
-  }
-  .main .product__btn:hover {
-    background: rgb(0, 53, 198);
-    color: #ffffff;
-  }
   .main .help__title {
-    font-size: 25px;
     text-wrap: balance;
     line-height: 120%;
   }
@@ -890,27 +775,6 @@ ol {
   }
   .main .help__card-description {
     font-size: 14px;
-  }
-  .main .help__btn {
-    border-radius: 12px;
-    background: rgb(1, 70, 254);
-    padding: 10px 70px;
-    cursor: pointer;
-    border: none;
-    transition: all 0.3s ease-in-out;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 0;
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-    margin-top: 30px;
-  }
-  .main .help__btn:hover {
-    background: rgb(0, 53, 198);
-    color: #ffffff;
   }
 }
 @media (max-width: 400px) {

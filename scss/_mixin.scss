@@ -8,24 +8,17 @@
     color: $color;
 }
 
-$maxWidth: 1400;
-@mixin adaptiv-font($pcSize, $mobSize) {
-    $addSize: $pcSize - $mobSize;
-    $maxWidth: $maxWidth - 320;
-    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
-}
-
 @mixin button($padding) {
     border-radius: 12px;
-    background: rgb(1, 70, 254);
+    background: $color-primary;
     padding: $padding;
     cursor: pointer;
     border: none;
     transition: all 0.3s ease-in-out;
-    @include font("Inter", normal, 600, 20px, 24px, 0, rgb(255, 255, 255));
+    @include font("Inter", normal, 600, 20px, 24px, 0, $color-white);
 
     &:hover {
         background: rgb(0, 53, 198);
-        color: #ffffff;
+        color: $color-white;
     }
 }
