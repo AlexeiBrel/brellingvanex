@@ -1,5 +1,18 @@
-const tab = document.querySelectorAll('.product__tabs-btn');
-const panel = document.querySelectorAll('.product__tabs-panel');
+
+
+
+const tab = [...document.querySelectorAll('.product__tabs-btn')];
+const panel = [...document.querySelectorAll('.product__tabs-panel')];
+
+
+window.addEventListener('load', () => {
+    loadStart()
+})
+
+function loadStart() {
+    for (let i = 0; i !== panel.length; i++)
+        panel[i].classList.add(`panel__active-${i + 1}`);
+}
 
 tab.forEach((item, tabIndex) => {
     item.addEventListener('click', function () {
@@ -11,9 +24,9 @@ tab.forEach((item, tabIndex) => {
 
         panel.forEach((panel, panelIndex) => {
             if (panelIndex === tabIndex) {
-                panel.classList.add('panel__active');
+                panel.classList.add(`panel__active`);
             } else {
-                panel.classList.remove('panel__active');
+                panel.classList.remove(`panel__active`);
             }
         });
     });
